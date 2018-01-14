@@ -1,0 +1,51 @@
+apple at 10p
+20 sales of apples at 10p each
+Add 20p apples
+banana at 10p
+20 sales of bananas at 10p each
+Add 20p bananas
+apple at 5p
+10 sales of apples at 10p each
+banana at 10p
+20 sales of bananas at 10p each
+grape at 10p
+20 sales of grapes at 10p each
+orange at 10p
+20 sales of oranges at 10p each
+grape at 10p
+5 sales of grapes at 5p each
+orange at 5p
+2 sales of oranges at 15p each
+banana at 15p
+grape at 20p
+25 sales of grapes at 20p each
+apple at 10p
+Add 2p grapes
+Add 3p bananas
+Subtract 5p apples
+apple at 10p
+20 sales of apples at 10p each
+Add 20p apples
+apple at 10p
+20 sales of bananas at 10p each
+Add 20p apples
+apple at 10p
+20 sales of bananas at 10p each
+banana at 10p
+grape at 10p
+20 sales of grapes at 10p each
+20 sales of oranges at 10p each
+orange at 10p
+20 sales of oranges at 10p each
+orange at 10p
+5 sales of grapes at 5p each
+apple at 10p
+20 sales of apples at 10p each
+Multiply 20p apples
+apple at 10p
+20 sales of bananas at 10p each
+banana at 10p
+Add 5p oranges
+Subtract 5p grapes
+12 sales of oranges at 2p each
+20 sales of grapes at 10p each
