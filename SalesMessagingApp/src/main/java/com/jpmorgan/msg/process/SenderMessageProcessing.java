@@ -17,20 +17,27 @@ public class SenderMessageProcessing
 	
 	private static ReceiverMessageProcessing receiveMsg;
 	
-	/**
+	
+    public static void main( String[] args )
+    {
+        SenderMessageProcessing senderMsgProcess = new SenderMessageProcessing();
+        senderMsgProcess.senderMessages();
+    }
+    
+    /**
 	 * sending messages for processing
 	 * 
 	 * @return void
 	 * */
-    public static void main( String[] args )
-    {
-        try {
+    public void senderMessages(){
+    	try {
         	receiveMsg = new ReceiverMessageProcessing();
 			String readMessage;
 			BufferedReader senderInputFile = new BufferedReader(new FileReader("sample/message_input.txt"));
 			while((readMessage = senderInputFile.readLine())!=null){
-				receiveMsg.messageProcess(readMessage);
+				receiveMsg.receivedMessageProcess(readMessage);
 			}
+			senderInputFile.close();
 		} catch (Exception e) {
 			throw new UserException("Exception occurred while sending messages :: "+e.getMessage());
 		}

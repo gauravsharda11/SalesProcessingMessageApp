@@ -26,7 +26,7 @@ public class ReceiverMessageProcessing {
 	 * 
 	 * @return void
 	 * */
-	public void messageProcess(String receivedMessage) {
+	public void receivedMessageProcess(String receivedMessage) {
 
 		if(receivedMessage.isEmpty()){
 			throw new UserException("Cannot accept empty message");
@@ -65,7 +65,8 @@ public class ReceiverMessageProcessing {
 				reportGenerator.generateAdjustmentSalesReport(adjustmentMessagesLog);
 			}
 			if(msgCounter>50){
-				return;
+				System.out.println("Application is paused now, no new messages will be accepted");
+				System.exit(0);
 			}
 		} catch (Exception e) {
 			throw new UserException("Exception occurred while processing messages :: "+e.getMessage());
@@ -79,7 +80,7 @@ public class ReceiverMessageProcessing {
 	 * @param String message
 	 * @return String
 	 * */
-	private String checkMessageType(String message) {
+	public String checkMessageType(String message) {
 		if(message.contains("sales")){
 			return "Two";
 		}else if(message.contains("at")){
